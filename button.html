@@ -1,0 +1,162 @@
+<html>
+    <head>
+        
+        <title>Ranjita First Demo</title>
+        <style>
+           .button {
+                display: inline-block;
+                background: #13abcf;
+                padding-top: 4px;
+                padding-bottom: 4px;
+                padding-right: 8px;
+                padding-left: 8px;
+                border-radius: 3px;
+                border-top-right-radius: 10px;
+                border-bottom-left-radius: 10px;
+                border: 1px solid black;
+                cursor: pointer;
+                user-select: none;
+                box-shadow: 1px 2px 0px 0px black;
+                position: relative;
+                top: -2px;
+                left: -1px;
+           }
+
+           .button.secondary-button{
+                background: white;
+           }
+
+           .button:hover {
+                background: #015a6f;
+                color: white;
+            }
+
+            .button:active {
+                background: #13abcf;
+                box-shadow: none;
+                top: 0;
+                left: 0;
+            }
+
+            .badge {
+                display: inline-block;
+                padding: 0 2px;
+                text-align: center;
+                background: #fdf4a6;
+                border-radius: 3px;
+                font-size: 0.8rem;
+                
+            }
+
+            .button .badge {
+                border: 1px solid #13abcf;
+            }
+
+            .button:hover .badge{
+                color: black;
+                border-color: #015a6f;
+            }
+
+            .button:active .badge{
+                border-color: black;
+            }
+
+            .indicator {
+                position: absolute;
+                height: 8px;
+                width: 8px;
+                background: red;
+                border-radius: 4px;
+                top: -4px;
+                left: -4px;
+                border: 1px solid black;
+                box-sizing: border-box;
+            }
+
+            .indicator.slythrine-indicator{
+                background: rgb(86, 196, 86);
+            }
+            .indicator.hufflepuff-indicator{
+                background: rgb(194, 196, 86);
+            }
+            .indicator.griffindoor-indicator{
+                background: rgb(196, 108, 86);
+            }
+            .indicator.raven-claw-indicator{
+                background: rgb(86, 174, 196);
+            }
+
+            /**** Ranjita Ka CSS - ****/
+
+           .r-button {
+                display: inline-flex;
+                height: 90px;
+                width: 120px;
+                background: aquamarine;
+                justify-content: center;
+                align-items: center;
+                padding: 12;
+                box-sizing: border-box;
+                border-radius: 13px;
+                border: 3px double #29677e;
+                border-style: ridge;
+                cursor: pointer;
+                user-select: none;
+                box-shadow: 1px 0.5px 0px 2px rosybrown inset;
+                text-align: center;
+            }
+           .r-button:hover {
+                font-size: x-large;
+                background: beige;
+           }
+           .r-button:active {
+                color: chocolate;
+                background-color: antiquewhite;
+            }
+
+            
+
+            
+        </style>
+    </head>
+    <body>
+        
+        <div class="button secondary-button">
+            Slythrine 
+            <div class="indicator slythrine-indicator"></div>
+            <div class="badge">3</div>
+        </div>
+
+        
+        <div id="hufflepuff-button" class="button">
+            Hufflepuff 
+            <div class="indicator hufflepuff-indicator"></div>
+            <div class="badge">2</div>
+        </div>
+        
+        <div class="button">
+            Griffindoor 
+            <div class="indicator griffindoor-indicator"></div>
+            <div class="badge">12</div>
+        </div>
+
+        
+        <div class="button">
+            RavenClaw 
+            <div class="indicator raven-claw-indicator"></div>
+            <div class="badge">New</div>
+        </div>
+        <br/>
+        <br/>
+        <div class="button">
+            Test Button 2 
+        </div>
+        <div class="badge">3</div>
+        <br/>
+        <br/>
+        <div class="r-button"> Ribbion bow</div>
+        <br/>
+        <br/>
+        <div class="r-button"> Ribbion bow new one</div>
+    </body>
+</html>
